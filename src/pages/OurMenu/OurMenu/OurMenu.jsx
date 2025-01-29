@@ -13,6 +13,8 @@ const OurMenu = () => {
     const pizzaItems = menu.filter(item => item.category == 'pizza')
     const saladItems = menu.filter(item => item.category == 'salad')
     const offeredItems = menu.filter(item => item.category == 'offered')
+    const soupItems = menu.filter(item => item.category == 'soup')
+
 
     return (
         <>
@@ -62,6 +64,15 @@ const OurMenu = () => {
                 <div className="grid grid-cols-1 my-5 md:grid-cols-2 gap-6 items-center">
                     {
                         saladItems.map((item, idx) => <ProductItem key={idx} item={item} />)
+                    }
+                </div>
+            </div>
+            {/*Dessert Items item  */}
+            <div className="my-10 px-3">
+                <CoverBanner title='Soup Items' dec='This is TP shop Home section product list.'/>
+                <div className="grid grid-cols-1 my-5 md:grid-cols-2 gap-6 items-center">
+                    {
+                        soupItems.map((item, idx) => <ProductItem key={idx} item={item} />)
                     }
                 </div>
             </div>

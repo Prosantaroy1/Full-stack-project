@@ -11,8 +11,8 @@ const Navber = () => {
             <NavLink to='/menu' className={({ isActive }) => isActive ? "text-red-500" : "text-black"}>
                 Our Menu
             </NavLink>
-            <NavLink to='/order ' className={({ isActive }) => isActive ? "text-red-500" : "text-black"}>
-                oder
+            <NavLink to='/ourshop' className={({ isActive }) => isActive ? "text-red-500" : "text-black"}>
+                Our Shop
             </NavLink>
         </div>
     </>
