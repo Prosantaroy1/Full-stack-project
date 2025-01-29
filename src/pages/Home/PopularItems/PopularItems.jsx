@@ -1,4 +1,4 @@
-import ProductItem from "../../../comments/productItem";
+import ProductItem from "../../../comments/ProductItem";
 import SectionTitle from "../../../comments/SectionTitle";
 import useMenu from "../../../Hooks/useMenu";
 
@@ -8,7 +8,6 @@ const PopularItems = () => {
     const [menu]=useMenu();
 
     const popularItems=menu.filter(item=> item.category == 'popular') //filter popular data
-
 
     return (
         <div>

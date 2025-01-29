@@ -5,9 +5,15 @@ const Navber = () => {
     // navitems list
     const navItems = <>
         <div className="flex gap-x-4 text-xl">
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/'>Products</NavLink>
-            <NavLink to='/'>oder</NavLink>
+            <NavLink className={({ isActive }) => isActive ? "text-red-500" : "text-black"} to='/'>
+                Home
+            </NavLink>
+            <NavLink to='/menu' className={({ isActive }) => isActive ? "text-red-500" : "text-black"}>
+                Our Menu
+            </NavLink>
+            <NavLink to='/order ' className={({ isActive }) => isActive ? "text-red-500" : "text-black"}>
+                oder
+            </NavLink>
         </div>
     </>
 
